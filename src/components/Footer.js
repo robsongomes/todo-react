@@ -1,12 +1,12 @@
 import React from 'react';
-import FilterLink from './FilterLink';
+import { NavLink } from 'react-router-dom';
 
 const Footer = () => (
     <p>
     Show: 
-        <FilterLink filter='all'>ALL</FilterLink>{' '} 
-        <FilterLink filter='complete'>COMPLETED</FilterLink>{' '}
-        <FilterLink filter='active'>ACTIVE</FilterLink>
+        <NavLink exact to='/'>ALL</NavLink>{' '}
+        <NavLink to='/active'>ACTIVE</NavLink>{' '}
+        <NavLink to='/completed'>COMPLETED</NavLink>{' '}
     </p>
 )
 
